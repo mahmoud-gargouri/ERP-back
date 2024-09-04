@@ -4,7 +4,10 @@
   "description": "my calendar",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "scripts": {
+  "start": "node index.js", // or your main server file
+  "dev": "nodemon index.js", // used for local development
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mahmoud Gargouri",
