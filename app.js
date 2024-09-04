@@ -19,7 +19,6 @@ const supplierRoutes = require("./routes/supplier");
 const URL =
   "mongodb+srv://mahmoud:Mah123Mon123Gar@cluster0.mzfoe0n.mongodb.net/calendar";
 const corsOptions = {
-  origin: "http://localhost:5000", // Adresse de votre frontend
   credentials: true, // Permet d'envoyer des cookies
 };
 
