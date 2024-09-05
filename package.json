@@ -4,16 +4,14 @@
   "description": "my calendar",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "node app.js",
-    "dev": "nodemon index.js",
-=======
-  "start": "node index.js", // or your main server file
->>>>>>> 0d11e57491eb54261e0c1e1adaa7c9acfb21d632
+    "start": "node app.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mahmoud Gargouri",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
   "devDependencies": {
     "nodemon": "^3.1.4"
   }
