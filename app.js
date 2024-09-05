@@ -23,7 +23,6 @@ const corsOptions = {
   credentials: true, // Allow cookies to be sent
 };
 
-
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -71,6 +70,7 @@ mongoose
 
 //Port Number
 
-app.listen(8000, () => {
-  console.log("Server is running on port 8000");
+const port = process.env.PORT || 8000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
