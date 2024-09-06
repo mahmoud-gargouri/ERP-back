@@ -19,7 +19,7 @@ const supplierRoutes = require("./routes/supplier");
 const URL =
   "mongodb+srv://mahmoud:Mah123Mon123Gar@cluster0.mzfoe0n.mongodb.net/calendar";
 const corsOptions = {
-  origin: credentials: true, // Allow cookies to be sent
+ credentials: true, // Allow cookies to be sent
 };
 
 app.use(express.json());
