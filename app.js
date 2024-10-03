@@ -19,6 +19,7 @@ const supplierRoutes = require("./routes/supplier");
 const URL =
   "mongodb+srv://mahmoud:Mah123Mon123Gar@cluster0.mzfoe0n.mongodb.net/calendar";
 const corsOptions = {
+ origin: 'https://main.d258h4sfau5d5.amplifyapp.com',
  credentials: true, // Allow cookies to be sent
 };
 
