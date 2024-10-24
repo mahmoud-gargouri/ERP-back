@@ -133,3 +133,20 @@ exports.updateSupplier = async (req, res, next) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+exports.deleteSupplier = async (req, res, next) => {
+  const supplierID = req.params.supplierID;
+
+  try {
+    const supplier = await Supplier.findByIdAndDelete(supplierID);
+
+    if (!supplier) {
+      return res.status(404).json({ error: "Supplier not found" });
+    }
+
+    console.log("Supplier deleted successfully");
+    res.status(200).json({ message: "Supplier deleted successfully" });
+  } catch (error) {
+    console.error("Error deleting supplier:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};
